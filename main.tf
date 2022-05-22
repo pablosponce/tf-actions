@@ -14,10 +14,3 @@ resource "aws_s3_bucket_versioning" "versioning" {
     status = "Enabled"
   }
 }
-
-
-resource "aws_s3_object" "config" {
-  bucket = aws_s3_bucket.b.bucket
-  key    = "config.xml"
-  content = "MiConfig"
-}
