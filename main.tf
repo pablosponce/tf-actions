@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "b" {
 resource "aws_s3_object" "object" {
   bucket = aws_s3_bucket.b.bucket
   key    = "index.html"
-  content = "Adios Mundo"
+  content = "Hola Mundo"
 }
 
 resource "aws_s3_bucket_versioning" "versioning" {
