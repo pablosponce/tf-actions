@@ -7,3 +7,10 @@ resource "aws_s3_object" "object" {
   key    = "index.html"
   content = "Adios Mundo"
 }
+
+resource "aws_s3_bucket_versioning" "versioning" {
+  bucket = aws_s3_bucket.b.id
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
