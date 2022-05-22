@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket-pablo"
+  bucket = "tf-actions-lab"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "Terraform Cloud & Github Actions""
     Environment = "Dev"
   }
 }
